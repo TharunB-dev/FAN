@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90px;
+}
+button{
+    height: 80px;
+    width: 190px;
+    font-size: 30px;
+    background-color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
+
+}
+#on:hover{
+    cursor: pointer;
+    background-color: rgb(255, 205, 6);
+    color:black;
+}
+#off:hover{
+    cursor: pointer;
+    background-color: rgb(255, 204, 0);
+    color:black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color:black;
+}
+.fan{
+    animation: onfan 0.0001s linear infinite;
+
+}
+@keyframes onfan{
+    0%{
+    transform: rotate(0deg);
+    }
+ 
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.off{
+    animation: none;
+}
